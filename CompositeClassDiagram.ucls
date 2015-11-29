@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.9" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="fr.iutvalence.info.dut.m3105.composite.Figure" 
+    project="ShapesAndFigures-Java-Design-Pattern-Structural-Complete-Version" 
+    file="/ShapesAndFigures-Java-Design-Pattern-Structural-Complete-Version/src/fr/iutvalence/info/dut/m3105/composite/Figure.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="487" y="144"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="fr.iutvalence.info.dut.m3105.composite.ComplexFigure" 
+    project="ShapesAndFigures-Java-Design-Pattern-Structural-Complete-Version" 
+    file="/ShapesAndFigures-Java-Design-Pattern-Structural-Complete-Version/src/fr/iutvalence/info/dut/m3105/composite/ComplexFigure.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="174" y="144"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="3" language="java" name="fr.iutvalence.info.dut.m3105.composite.Operator" 
+    project="ShapesAndFigures-Java-Design-Pattern-Structural-Complete-Version" 
+    file="/ShapesAndFigures-Java-Design-Pattern-Structural-Complete-Version/src/fr/iutvalence/info/dut/m3105/composite/Operator.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="76" y="303"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="4" language="java" name="fr.iutvalence.info.dut.m3105.composite.SimpleFigure" 
+    project="ShapesAndFigures-Java-Design-Pattern-Structural-Complete-Version" 
+    file="/ShapesAndFigures-Java-Design-Pattern-Structural-Complete-Version/src/fr/iutvalence/info/dut/m3105/composite/SimpleFigure.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="747" y="144"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="fr.iutvalence.info.dut.m3105.composite.CompositeApplication" 
+    project="ShapesAndFigures-Java-Design-Pattern-Structural-Complete-Version" 
+    file="/ShapesAndFigures-Java-Design-Pattern-Structural-Complete-Version/src/fr/iutvalence/info/dut/m3105/composite/CompositeApplication.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="487" y="2"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="6">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <association id="7">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="8" name="operator">        
+        <position height="19" width="54" x="66" y="215"/>      
+      </attribute>      
+      <multiplicity id="9" minimum="0" maximum="1">        
+        <position height="17" width="25" x="132" y="217"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="10">    
+    <bendpoint x="173" y="75"/>    
+    <bendpoint x="401" y="75"/>    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="11" name="firstFigure">        
+        <position height="19" width="62" x="343" y="75"/>      
+      </attribute>      
+      <multiplicity id="12" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="13">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <generalization id="14">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <association id="15">    
+    <bendpoint x="173" y="218"/>    
+    <bendpoint x="386" y="218"/>    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="16" name="secondFigure">        
+        <position height="19" width="83" x="312" y="198"/>      
+      </attribute>      
+      <multiplicity id="17" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
